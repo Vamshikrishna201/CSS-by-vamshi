@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* span is inline  */
+    span{ 
+        color: red;
+    }
+
+    h1
+    {
+        background-color:aqua;
+        padding: 6px;
+        margin: 0px 0px 20px;
+    }
+
+    p{
+        padding: 0px 10px 0px 10px;
+    }
+    #test{
+
+        /* background-color: pink; */
+        color: blue;
+        margin-top: 300px;
+    }
+
+    h3
+    {
+        background-color: brown;
+        color: white;
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+    }
+
+</style>
+<body>
+
+<h1>1. Block-Level Elements</h1>
+
+<h3>Definition:</h3>
+<p>A block-level element always starts on a new line and typically occupies the entire available horizontal space of its parent container. You can control its height, width, margins, and padding on all sides (top, bottom, left, right).</p>
+
+<h5>Common Examples:</h5>
+div, p, h1 through h6, ul, li, header, footer.
+
+<hr><hr>
+
+<h1>2. Inline Elements</h1>
+
+<h3>Definition:</h3>
+<p>An inline element does not start on a new line and only takes up as much width as is necessary for its content. While you can apply horizontal padding and margins, setting a specific height or vertical <span>margin-top/margin-bottom</span> generally has no visual effect.
+</p>
+
+<h5>Common Examples:</h5>
+span, a, img, strong, em, br.
+
+<br><br>
+<hr><hr>
+
+<span id="test">Inline Element</span>
+
+
+    
+</body>
+</html>
