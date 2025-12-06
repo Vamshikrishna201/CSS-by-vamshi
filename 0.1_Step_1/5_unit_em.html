@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 1. The Anchor (Root) */
+    html{ /* html tag is root element */
+      /* font-size: 20px; */
+    }
+    /* 2. The Parent (Context) */
+    .parent-container {
+      font-size: 40px; /* This is 2x the root size */
+    }
+
+    /* 3. The REM Box (Ignores the Parent) */
+    .box-rem {
+      background-color: lightblue;
+      height: 2rem; /* 2 * 20px (Root) */
+      margin-bottom: 10px;
+    }
+
+    /* 4. The EM Box (Listens to the Parent) */
+    .box-em {
+      background-color: lightcoral;
+      height: 1em; /* 2 * 40px (Parent) */
+      width: 6em;
+    }
+  </style>
+  <body>
+    <!-- Example:- em and rem -->
+    <!-- 
+
+    rem means (root element) its an responsible
+    to html font-size, 
+    if html font-size is 12px, 
+    then the 1rem behave on it like a root tag event,
+    2rem will be 2x of its root tag.
+
+    --------------------------------------------
+
+    em depend karta hai us element ke font size par,
+    aur ye agar parent ko dete hai to children par bhi
+    apply hota hai.
+
+    matlab kuchh aisa:
+    Conside kariye ek element hai jiske 
+    paas 16px font size hai.
+
+    to 1em ki valye 16px hogi,
+    aur font size change kiya to uske response main
+    em ki value bhi badhegi.
+
+    but 1em default size is 16px
+    -->
+
+    <p>Hello</p> <!--default size is 20px-->
+
+    <div class="parent-container">
+      <div class="box-em">I am EM</div>
+      <div class="box-rem">I am REM</div>
+    </div>
+
+  </body>
+</html>
