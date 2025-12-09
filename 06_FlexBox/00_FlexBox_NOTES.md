@@ -230,10 +230,15 @@ Build all six sides using flex.
 **Example patterns (must match real dice):**
 
 1️⃣ One dot → centered using flex
+
 2️⃣ Two dots → top-left & bottom-right
+
 3️⃣ Three dots → top-left, center, bottom-right
+
 4️⃣ Four dots → four corners
+
 5️⃣ Five dots → four corners + center
+
 6️⃣ Six dots → three on left column + three on right column
 
 Rules:
