@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;;
+    background: linear-gradient(to right, rgb(22, 31, 42), rgb(21, 23, 39))
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 9px;
+    margin: 5px 0px 19px 0px;
+    border: 1px solid rgb(120, 120, 120);
+}
+
+.login_form{
+    height: 330px;
+    width: 500px;
+    outline: 1px solid rgb(23, 33, 59);
+    border-radius: 9px;
+    padding: 50px;
+    background-color: rgb(246, 246, 242);
+}
+
+.log_btn{
+    padding: 8px;
+    width: 100%;
+    background: rgb(131, 159, 251);
+    font-weight: 300;
+    border-radius: 5px;
+    color: white;
+}
+
+.log_btn:hover{
+    font-weight: 500;
+    font-size: large;
+    background: rgb(7, 196, 193);
+    transform: scale(1.01);
+    transition: all ease-out 0.4s;
+
+}
+
+.log_btn:active{
+    background: rgb(52, 210, 173);
+    transform: scale(0.8);
+    transition: all ease-in-out 0.2s;
+}
+
+
+
